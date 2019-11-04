@@ -1,0 +1,33 @@
+.container{
+   
+    width:85%;
+    height: 100vh;
+    background-color: blue;
+    text-align: center;
+
+    
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.user-choice{
+    border:solid;
+    height: 40px;
+    width: 80px;
+}
+.round-winner{
+    border: solid;
+}
+.scoreboard{
+    border: solid;
+}
+button{
+    padding:1rem;
+    border-radius: 10px;
+    
+
+}
