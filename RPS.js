@@ -81,8 +81,10 @@ scissors.addEventListener("click",function(){
     let computerChoice = getComputerChoice();
     console.log(userChoice);
     console.log(computerChoice);
-    console.log( determineWinner(userChoice,computerChoice))
-    document.getElementById(uc).innerHTML="the computer chose"+userChoice
+    console.log( determineWinner(userChoice,computerChoice));
+    document.getElementById("uc").innerHTML="the user chose "+userChoice
+    document.getElementById("computer-choice").innerHTML="the computer chose" +computerChoice
+    document.getElementById("round-winner").innerHTML="the winner is"+determineWinner(userChoice,computerChoice)
     
   }
 
