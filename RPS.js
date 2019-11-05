@@ -1,8 +1,8 @@
 const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
-const userScore = 0
-const computerScore =0
+let userScore = 0
+let computerScore =0
 /*const winner =determineWinner(userChoice,computerChoice)*/
 let uc = document.getElementById("user-choice")
 
@@ -45,28 +45,39 @@ scissors.addEventListener("click",function(){
   const determineWinner=(userChoice,computerChoice)=>{
     
     if(userChoice===computerChoice){
+    
       return "Game is a tie";
+      
     }
    
     if(userChoice ==="rock"){
       if(computerChoice ==="paper"){
+        computerScore++
         return "Computer wins";
       }else{
-        return "User wins";
+        userScore++
+        return "User wins";    
+        
+  
       }
+
     }
     if(userChoice==="paper"){
       if(computerChoice==="scissors"){
+        computerScore++
          return "Computer wins";
       }else{
+        userScore++
         return "User wins"
       }  
     }
    
     if(userChoice==="scissors"){
       if(computerChoice==="rock"){
+        computerScore++
         return "Computer wins";
       }else{
+        userScore++
         return "User wins";
       }
     }
@@ -74,19 +85,27 @@ scissors.addEventListener("click",function(){
      
  
   
-  function playGame(userChoice){
+  const playGame=(userChoice)=>{
    // document.getElementById(user-choice).innerHTML="the computer chose"+computerChoice
     
     
     let computerChoice = getComputerChoice();
+    let roundwinner = determineWinner(userChoice,computerChoice)
     console.log(userChoice);
     console.log(computerChoice);
-    console.log( determineWinner(userChoice,computerChoice));
+    console.log(roundwinner);
     document.getElementById("uc").innerHTML="the user chose "+userChoice
     document.getElementById("computer-choice").innerHTML="the computer chose" +computerChoice
-    document.getElementById("round-winner").innerHTML="the winner is"+determineWinner(userChoice,computerChoice)
+    document.getElementById("round-winner").innerHTML="the winner is"+roundwinner
+    document.getElementById("user-score").innerHTML=userScore
+    document.getElementById("computer-score").innerHTML = computerScore
+      console.log(computerScore)
+      console.log(userScore)
+
+
+    }
     
-  }
+  
 
 
 /*funtion showWinner(winner,computerChoice){
