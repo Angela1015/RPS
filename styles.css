@@ -1,3 +1,5 @@
+
+
 .container{
    
     width:85%;
@@ -13,21 +15,40 @@ h1{
 body{
     display: flex;
     justify-content: center;
+    
 }
-.user-choice{
+.restart-button{
+    cursor: pointer;
+}
+#user-choice{
+    border:solid;
+    height: 40px;
+    width: 80px;
+    
+}
+#computer-choice{
     border:solid;
     height: 40px;
     width: 80px;
 }
-.round-winner{
+#round-winner{
     border: solid;
+    height: 40px;
+    width: 80px;
 }
 .scoreboard{
     border: solid;
 }
-button{
-    padding:1rem;
-    border-radius: 10px;
+img{
+   /* padding:1rem;*/
+    border-radius:2px;
+    height: 75px;
+    width: 75px;
     
 
+}
+
+.uc{
+    width: 80px;
+    height: 60px;
 }

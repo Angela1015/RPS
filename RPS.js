@@ -1,6 +1,10 @@
 const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
+const userScore = 0
+const computerScore =0
+/*const winner =determineWinner(userChoice,computerChoice)*/
+let uc = document.getElementById("user-choice")
 
 /*let getUserChoice=(userChoice)*/
 
@@ -71,16 +75,22 @@ scissors.addEventListener("click",function(){
  
   
   function playGame(userChoice){
+   // document.getElementById(user-choice).innerHTML="the computer chose"+computerChoice
+    
     
     let computerChoice = getComputerChoice();
     console.log(userChoice);
     console.log(computerChoice);
     console.log( determineWinner(userChoice,computerChoice))
+    document.getElementById(uc).innerHTML="the computer chose"+userChoice
+    
   }
 
 
-
-
+/*funtion showWinner(winner,computerChoice){
+  if(winner==="User wins")
+   scoreboard.user++
+}*/
 
 
 
