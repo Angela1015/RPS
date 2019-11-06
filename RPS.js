@@ -87,10 +87,10 @@ reset.addEventListener("click",resetScore)
      
  
   
- const playGame=(userChoice)=>{
+ function playGame(userChoice){
    // document.getElementById(user-choice).innerHTML="the computer chose"+computerChoice
     
-    
+    if(computerScore<3&&userScore<3){
     let computerChoice = getComputerChoice();
     let roundwinner = determineWinner(userChoice,computerChoice)
     console.log(userChoice);
@@ -102,8 +102,20 @@ reset.addEventListener("click",resetScore)
     document.getElementById("user-score").innerHTML=userScore
     document.getElementById("computer-score").innerHTML = computerScore
       console.log(computerScore)
-      console.log(userScore)}
-
+      console.log(userScore)
+    }else{
+      if(userScore>computerScore){
+        document.getElementById("game-winner").innerHTML="user the game"
+      }else{
+        document.getElementById("game-winner").innerHTML="computer wins the game"
+        alert("click on reset to restart the game")
+      }
+    }
+  }
+      
+    
+      
+    
 
   
     
@@ -112,6 +124,9 @@ computerScore=0
 userScore=0
 document.getElementById("user-score").innerHTML=userScore
 document.getElementById("computer-score").innerHTML=computerScore
+document.getElementById("uc").innerHTML=""
+    document.getElementById("computer-choice").innerHTML="" 
+    document.getElementById("round-winner").innerHTML=""
     
   }
 
