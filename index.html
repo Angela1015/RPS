@@ -12,23 +12,35 @@
    <header><h1>Rock, Paper, Scissors</h1></p>
     <p><h2>Can You Beat the Bot?</h2></p>
    </header>
-   <div class="scoreboard">
+  <!--- <div class="scoreboard">
        <span id ="user-score" class="user-score">0</span>:<span id ="computer-score"class="computer-score">0</span>
-   </div>
-   <div class="winner">
-       <p>Paper Covers Rock you win</p>
-   </div>
+   </div>*-->
+  
    <section>
-        <button id ="rock"><img src="images\rock.jpg"></button>
-        <button id ="paper"><img src ="images\paper.jpg"></button>
-     <button id ="scissors"><img src="images\scissors.jpg"></button>
-     <p>Your Opponent<img src ="images\robot.png"></p>
-     <p>Choose your weapon</p>
+        <p>Choose your weapon</p>
      
+        <img src="images\diamond.png" id ="rock" alt="picture of rock">
+        <img src ="images\Money.png" alt ="picture of paper" id ="paper">
+     <button id ="scissors"><img src="images\scissors.jpg" alt = "picture of scissors"></button>
+     <p>Your Opponent</p>
+     <img src ="images\robot.png">
+    
    </section>
+<section class="display-choices">
    <p id = "uc"></p>
+   <p>:</p>
    <p id = "computer-choice"></p>
+   
+  
+   </section>
+   
    <p id = "round-winner"></p>
+   
+   
+   <div class="scoreboard">
+        
+        <span id ="user-score" class="user-score">0</span>:<span id ="computer-score"class="computer-score">0</span>
+    </div>
    
     <script src="RPS.js"></script>
 </body>

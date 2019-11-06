@@ -20,21 +20,30 @@ body{
 .restart-button{
     cursor: pointer;
 }
-#user-choice{
+.display-choices{
+    display: flex;
+    justify-content:center;
+}
+#uc{
+    
     border:solid;
-    height: 40px;
-    width: 80px;
+    height: 20px;
+    width: 250px;
     
 }
 #computer-choice{
+    
     border:solid;
-    height: 40px;
-    width: 80px;
+    height: 20px;
+    width: 250px;
 }
-#round-winner{
+#round-winner{display: inline-flex;
+    justify-content: center;
+
     border: solid;
-    height: 40px;
-    width: 80px;
+    height: 20px;
+    width: 250px;
+    margin-top: -10px;
 }
 .scoreboard{
     border: solid;
@@ -48,7 +57,4 @@ img{
 
 }
 
-#uc{
-    width: 80px;
-    height: 60px;
-}
+
