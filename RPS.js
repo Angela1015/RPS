@@ -5,6 +5,7 @@ let userScore = 0
 let computerScore =0
 /*const winner =determineWinner(userChoice,computerChoice)*/
 let uc = document.getElementById("user-choice")
+const reset = document.getElementById("reset")
 
 /*let getUserChoice=(userChoice)*/
 
@@ -16,6 +17,7 @@ paper.addEventListener("click",function(){
 scissors.addEventListener("click",function(){
   playGame("scissors")})
 
+reset.addEventListener("click",resetScore)
 // This starts code form CC lesson
 
 /*const getUserChoice=(userInput)=>{
@@ -85,7 +87,7 @@ scissors.addEventListener("click",function(){
      
  
   
-  const playGame=(userChoice)=>{
+ const playGame=(userChoice)=>{
    // document.getElementById(user-choice).innerHTML="the computer chose"+computerChoice
     
     
@@ -100,12 +102,18 @@ scissors.addEventListener("click",function(){
     document.getElementById("user-score").innerHTML=userScore
     document.getElementById("computer-score").innerHTML = computerScore
       console.log(computerScore)
-      console.log(userScore)
+      console.log(userScore)}
 
 
-    }
-    
   
+    
+  function resetScore(){
+computerScore=0
+userScore=0
+document.getElementById("user-score").innerHTML=userScore
+document.getElementById("computer-score").innerHTML=computerScore
+    
+  }
 
 
 /*funtion showWinner(winner,computerChoice){
@@ -122,4 +130,4 @@ scissors.addEventListener("click",function(){
 
 
 
-   
+
