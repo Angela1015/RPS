@@ -6,6 +6,7 @@ let computerScore =0
 /*const winner =determineWinner(userChoice,computerChoice)*/
 let uc = document.getElementById("user-choice")
 const reset = document.getElementById("reset")
+let name = prompt("enter yout name")
 
 /*let getUserChoice=(userChoice)*/
 
@@ -96,7 +97,7 @@ reset.addEventListener("click",resetScore)
     console.log(userChoice);
     console.log(computerChoice);
     console.log(roundwinner);
-    document.getElementById("uc").innerHTML="the user chose "+userChoice
+    document.getElementById("uc").innerHTML=name +"chose"+userChoice
     document.getElementById("computer-choice").innerHTML="the computer chose" +computerChoice
     document.getElementById("round-winner").innerHTML="the winner is"+roundwinner
     document.getElementById("user-score").innerHTML=userScore
