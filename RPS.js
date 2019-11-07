@@ -89,7 +89,7 @@ reset.addEventListener("click",resetScore)
   
  function playGame(userChoice){
    // document.getElementById(user-choice).innerHTML="the computer chose"+computerChoice
-    
+     
     if(computerScore<3&&userScore<3){
     let computerChoice = getComputerChoice();
     let roundwinner = determineWinner(userChoice,computerChoice)
@@ -105,10 +105,10 @@ reset.addEventListener("click",resetScore)
       console.log(userScore)
     }else{
       if(userScore>computerScore){
-        document.getElementById("game-winner").innerHTML="user the game"
+        document.getElementById("game-winner").innerHTML="user wins the game"
       }else{
         document.getElementById("game-winner").innerHTML="computer wins the game"
-        alert("click on reset to restart the game")
+        
       }
     }
   }
@@ -127,6 +127,7 @@ document.getElementById("computer-score").innerHTML=computerScore
 document.getElementById("uc").innerHTML=""
     document.getElementById("computer-choice").innerHTML="" 
     document.getElementById("round-winner").innerHTML=""
+    document.getElementById("game-winner").innerHTML=""
     
   }
 
@@ -135,9 +136,6 @@ document.getElementById("uc").innerHTML=""
   if(winner==="User wins")
    scoreboard.user++
 }*/
-
-
-
 
 
 
