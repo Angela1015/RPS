@@ -2,7 +2,7 @@ const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
 let userScore = 0
-let computerScore =0
+let computerScore = 0
 /*const winner =determineWinner(userChoice,computerChoice)*/
 let uc = document.getElementById("user-choice")
 const reset = document.getElementById("reset")
@@ -59,7 +59,7 @@ reset.addEventListener("click",resetScore)
         return "Computer wins";
       }else{
         userScore++
-        return "User wins";    
+        return name +" wins" ; 
         
   
       }
@@ -71,7 +71,7 @@ reset.addEventListener("click",resetScore)
          return "Computer wins";
       }else{
         userScore++
-        return "User wins"
+        return name + " wins"
       }  
     }
    
@@ -81,7 +81,7 @@ reset.addEventListener("click",resetScore)
         return "Computer wins";
       }else{
         userScore++
-        return "User wins";
+        return name + " wins";
       }
     }
   }
@@ -90,29 +90,31 @@ reset.addEventListener("click",resetScore)
   
  function playGame(userChoice){
    // document.getElementById(user-choice).innerHTML="the computer chose"+computerChoice
-     
+    
     if(computerScore<3&&userScore<3){
     let computerChoice = getComputerChoice();
     let roundwinner = determineWinner(userChoice,computerChoice)
     console.log(userChoice);
     console.log(computerChoice);
     console.log(roundwinner);
-    document.getElementById("uc").innerHTML=name +"chose"+userChoice
-    document.getElementById("computer-choice").innerHTML="the computer chose" +computerChoice
-    document.getElementById("round-winner").innerHTML="the winner is"+roundwinner
+    document.getElementById("uc").innerHTML=name +" chose "+userChoice
+    document.getElementById("computer-choice").innerHTML="The computer chose " +computerChoice
+    document.getElementById("round-winner").innerHTML=roundwinner + " this round"
     document.getElementById("user-score").innerHTML=userScore
     document.getElementById("computer-score").innerHTML = computerScore
       console.log(computerScore)
       console.log(userScore)
     }else{
       if(userScore>computerScore){
-        document.getElementById("game-winner").innerHTML="user wins the game"
+        document.getElementById("game-winner").innerHTML=name + " wins the game"
       }else{
-        document.getElementById("game-winner").innerHTML="computer wins the game"
+        document.getElementById("game-winner").innerHTML="Computer wins the game"
         
       }
     }
   }
+    
+  
       
     
       
