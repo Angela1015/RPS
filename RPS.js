@@ -86,11 +86,25 @@ reset.addEventListener("click",resetScore)
     }
   }
      
- 
+ function getUserName(){
+   let name = prompt("Please enter your name")
+   if(name.lenght>1){
+     alert("Hello" +name)
+   }else{
+     name = "Won't do right"
+     alert("Okay"+name+ "it is")
+   }
+ }
   
  function playGame(userChoice){
    // document.getElementById(user-choice).innerHTML="the computer chose"+computerChoice
-    
+    /*for(let i =1;i<2;i++){if(name.length>0){
+      name =name
+      alert("HELLO" + name.toUpperCase()+ "thank you for playing")
+    }else{
+      alert("Okay my name is WON'T DO RIGHT , thanks for playing")
+      name = "won't do right"
+    }}*/
     if(computerScore<3&&userScore<3){
     let computerChoice = getComputerChoice();
     let roundwinner = determineWinner(userChoice,computerChoice)
