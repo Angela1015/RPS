@@ -6,12 +6,16 @@ let computerScore = 0
 /*const winner =determineWinner(userChoice,computerChoice)*/
 let uc = document.getElementById("user-choice")
 const reset = document.getElementById("reset")
-let name = prompt("enter yout name")
+let name = prompt("Please enter your name")
 
 /*let getUserChoice=(userChoice)*/
 
-rock.addEventListener("click",function(){
-  playGame("rock")})
+rock.addEventListener("click", function(){
+  playGame("scissors")
+})
+
+
+
 
 paper.addEventListener("click",function(){
   playGame("paper")})
