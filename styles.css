@@ -2,7 +2,8 @@ body{
     display: flex;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color:rgb(231, 230, 157);
+    background-color:hsl(204, 66%, 66%);
+
 }
 
 .container{
@@ -16,10 +17,8 @@ body{
 }
 
 .choices{
-    
     display: flex;
-    
-    justify-content: space-around;
+    justify-content: center;
     
 }
 
@@ -27,18 +26,26 @@ body{
     width: 10rem;
     height: 10rem;
     margin-left:10em;
+    margin-top: 1.5%;
 }
 .paper{
     width: 10rem;
     height: 10rem;
     margin-right: 10rem;
+    transform:rotate(45deg);
+    margin-top: 2%;
 }
 .scissors{
     margin-right:10rem;
     margin-left: -10rem;
     height: 25%;
-    width:25%
+    width:25%;
+    margin-top:-5%;
+
+  
+   
 }
+
 .restart-button{
     cursor: pointer;
 }
