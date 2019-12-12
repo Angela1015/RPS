@@ -2,7 +2,8 @@ body{
     display: flex;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color:hsl(204, 66%, 66%);
+    background-color: black;
+    color:green;
 
 }
 
@@ -92,7 +93,7 @@ body{
     width: 250px;
 }
 #reset{
-    background-color: rgb(91, 216, 91);
+    background-color: green;
 }
 /*img{
     padding:1rem;
